@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+
+:root {
+  --primaryColor: #f09d51;
+  --mainWhite: #fff;
+  --mainBlack: #222;
+  --mainGrey: #ececec;
+  --mainSpacing: 0.1rem;
+  --mainTransition: all 0.3s linear;
+}
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+/* --------------- Navbar ---------------- */
+.nav {
+    width: 100%;
+    box-shadow: 0 2px 5px #ccc;
+    background-color: rgb(14, 1, 1);
+    z-index: 10;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px 5%
+}
+
+#left-menu {
+    display: inline-flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#logo > a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+#logo {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-right: 16px;
+    
+}
+
+#logo span {
+    font-weight: 800;
+}
+
+#left-menu > a {
+    text-decoration: none;
+    color: whitesmoke;
+    margin-left: 32px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+
+#search-wrapper {
+    width: 100%;
+    max-width: 200px;
+    position: relative;
+}
+#seaech-wrapper :hover input#search-box{
+    color: tomato;
+}
+#search-wrapper > i {
+    position: absolute;
+    color: #999;
+    font-size: 18px;
+    top: 50%;
+    left: 18px;
+    transform: translateY(-50%);
+}
+
+#search-box {
+    width: 100%;
+    border: 1px solid rgb(245, 242, 242);
+    background-color: rgb(245, 242, 242);
+    box-sizing: border-box;
+    padding: 10px 24px 8px 48px;
+    color: black;
+    outline: none;
+}
+ 
+  
+  
+ 
+ /* #search-wrapper i{
+     display: none;
+     color: white;
+ } */
+
+/* .search-box {
+    width: 100%;
+    border: 1px solid rgb(245, 242, 242);
+    background-color: rgb(245, 242, 242);
+    box-sizing: border-box;
+    padding: 10px 24px 8px 48px;
+    color: black;
+    outline: none;
+}  */
+.nav-icon {
+    font-size: 1.5rem;
+  }
+.cart-items {
+    position: absolute;
+    margin-top: -40px;;
+   margin-right: 50px;
+    right: 0px;
+    background: var(--primaryColor);
+    padding: 0 5px;
+    border-radius: 30%;
+    color: var(--mainWhite);
+    
+  }
+  .cart-btn{
+      color: white;
+      -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+
+
+
+/* main section */
+main {
+    width: 100%;
+    min-height: 80vh;
+    box-sizing: border-box;
+    margin-top: 100px;
+    padding-bottom: 8%;
+}
+/* end of main section */
+
+/* footer css */
+footer {
+    width: 100%;
+    background-color: #1c1b1e; 
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 4% 8%;
+ }
+ 
+ footer > div {
+     padding-left: 60px;
+     padding-right: 60px;
+ }
+ 
+ footer > div:first-of-type {
+     padding-left: 0;
+ }
+ 
+ .footer-heading {
+     text-transform: uppercase;
+     font-weight: 600;
+     font-size: 16px;
+     color: white;
+     opacity: 0.9;
+     letter-spacing: 1px;
+ }
+ 
+ .footer-link {
+     text-decoration: none;
+     color: white;
+     display: block;
+     margin-top: 12px;
+     letter-spacing: 1px;
+     text-transform: uppercase;
+     font-size: 14px;
+     opacity: 0.8;
+ }
